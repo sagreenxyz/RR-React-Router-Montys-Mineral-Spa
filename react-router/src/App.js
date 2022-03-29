@@ -1,5 +1,7 @@
 
 import './App.css';
+import { BrowserRouter as Router, Link, Route } from 'react-router-dom'
+
 
 import Home from './components/Home'
 import About from './components/About'
@@ -24,7 +26,7 @@ function App() {
               <a href={<About />}>About Us</a>
             </li>
             <li>
-              <a href={<Packages packages={packages}/>}>Our Packages</a>
+              <a href={<Packages packages={packages} />}>Our Packages</a>
             </li>
           </ul>
         </div>
