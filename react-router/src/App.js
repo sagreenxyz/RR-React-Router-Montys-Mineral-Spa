@@ -1,6 +1,6 @@
 
 import './App.css';
-import { BrowserRouter as Router, Link, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Link, Routes, Route } from 'react-router-dom'
 
 
 import Home from './components/Home'
@@ -33,6 +33,13 @@ function App() {
           </div>
 
         </header>
+        <div className="display">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/packages" element={<Packages />} />
+          </Routes>
+        </div>
       </Router>
     </div>
   );
